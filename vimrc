@@ -23,6 +23,12 @@ set clipboard=unnamed
 " Give a shortcut key to NERD Tree
 map nn :NERDTreeToggle<CR>
 
+"""""""""""" VimOrganizer settings
+filetype plugin indent on
+
+au! BufRead,BufWrite,BufWritePost,BufNewFile *.org
+au BufEnter *.org call org#SetOrgFileType()
+""""""""""""
 
 " attempting to get the syntax automatically selected based on extension
 syntax on
