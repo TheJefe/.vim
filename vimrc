@@ -1,3 +1,7 @@
+"""" Pathogen setup """"""
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 """""""""" Jeffs Custom Highlighting """"
 "color anotherdark
 syn match codeFoldStart "/\*"
@@ -20,3 +24,5 @@ map <F2> :NERDTreeToggle<CR>
 syntax on
 filetype on
 au BufNewFile,BufRead *.note set filetype=note
+
+
