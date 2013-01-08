@@ -16,6 +16,7 @@ setlocal foldmethod=marker
 setlocal foldmarker=/*,*/
 set guioptions=aAce
 set clipboard=unnamed
+set number
 
 " Map leader
 :let mapleader = ","
