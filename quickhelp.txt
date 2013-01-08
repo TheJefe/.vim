@@ -1,0 +1,40 @@
+d ~ delete
+D ~ delete from cursor to the end of line
+a ~ append
+A ~ append at end of line
+r ~ replace
+p ~ paste
+y ~ yank / copy
+x ~ delete
+0 ~ move curser to the begining of the line
+$ ~ move curser to the end of the line
+w ~ move curser to the right one word
+b ~ move curser to the left one word
+v ~ visual mode for selecting
+viw ~ select word
+G ~ end of file
+1G ~ begining of file
+gg ~ goto begining of file
+Ctrl+p ~ while inserting this auto completes
+Ctrl+d ~ page down
+Ctrl+u ~ page up
+
+Marks
+:marks ~ view all marks
+:delmarks! ~ deletes all marks
+ma ~ set mark a to current line
+'a ~ goto mark a... or sub "a" with another mark identifier
+
+
+:e ~ reload from disk
+:y *  ~ copy to system clipboard
+:set autoread ~ poll file for changes
+:PrettyXML ~ formats an xml file
+
+Pretty JSON
+set syn=js
+highlight all text and hit =
+
+Remove all blank lines
+:g/^$/d
+
