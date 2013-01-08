@@ -16,12 +16,18 @@ setlocal foldmethod=marker
 setlocal foldmarker=/*,*/
 set guioptions=aAce
 set clipboard=unnamed
+
+" Map leader
+:let mapleader = ","
+
 " Give a shortcut key to NERD Tree
 map nn :NERDTreeToggle<CR>
+
 
 " attempting to get the syntax automatically selected based on extension
 syntax on
 filetype on
+filetype plugin on
 au BufNewFile,BufRead *.note set filetype=note
 
 
