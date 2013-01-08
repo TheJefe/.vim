@@ -14,7 +14,6 @@ hi codeFoldEnd term=bold cterm=bold gui=bold ctermbg=blue guibg=green
 
 setlocal foldmethod=marker
 setlocal foldmarker=/*,*/
-setlocal transparency=15
 set guioptions=aAce
 set clipboard=unnamed
 " Give a shortcut key to NERD Tree
