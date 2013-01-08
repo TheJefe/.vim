@@ -18,7 +18,7 @@ setlocal transparency=15
 set guioptions=aAce
 set clipboard=unnamed
 " Give a shortcut key to NERD Tree
-map <F2> :NERDTreeToggle<CR>
+map nn :NERDTreeToggle<CR>
 
 " attempting to get the syntax automatically selected based on extension
 syntax on
