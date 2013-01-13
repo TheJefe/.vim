@@ -37,4 +37,12 @@ filetype on
 filetype plugin on
 au BufNewFile,BufRead *.note set filetype=note
 
+" Show trailing spaces as a dot
+set list listchars=trail:.
 
+function TrimSpaces()
+  %s/\s*$//
+  ''
+:endfunction
+
+nnoremap <leader><Space> :call TrimSpaces()<CR>
