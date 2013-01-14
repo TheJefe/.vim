@@ -24,7 +24,7 @@ set noswapfile
 :let mapleader = ","
 
 " Give a shortcut key to NERD Tree
-map nn :NERDTreeToggle<CR>
+map <leader>n :NERDTreeToggle<CR>
 
 """""""""""" VimOrganizer settings
 filetype plugin indent on
