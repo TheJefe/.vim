@@ -49,12 +49,11 @@ function TrimSpaces()
 :endfunction
 
 function NoteBlock()
-  "r~/.vim/noteBlockTemplate.txt
-  "= hello
-  test="hello"
-  return a:test
+  let @a= "/* **".strftime("%m/%d/%y").":"
+  let @b= "*/"
+  put b
+  .-1 put a
 :endfunction
 
 nnoremap <leader><Space> :call TrimSpaces()<CR>
-nnoremap <leader>t "=strftime("%m/%d/%y")<CR>P " insert a timestamp
-nnoremap <leader>d "=strftime("/* **%m/%d/%y \n\n*/")<CR>P " insert note block
+nnoremap <leader>f :call NoteBlock()<CR>
