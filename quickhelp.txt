@@ -6,6 +6,7 @@ r ~ replace
 p ~ paste
 y ~ yank / copy
 x ~ delete
+dw ~ delete word
 0 ~ move curser to the begining of the line
 $ ~ move curser to the end of the line
 w ~ move curser to the right one word
@@ -38,3 +39,5 @@ highlight all text and hit =
 Remove all blank lines
 :g/^$/d
 
+** CODE
+<leader>cc  ~ comments out a line
