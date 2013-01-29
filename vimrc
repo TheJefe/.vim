@@ -49,7 +49,7 @@ function TrimSpaces()
 :endfunction
 
 function NoteBlock()
-  let @a= "/* **".strftime("%m/%d/%y").":"
+  let @a= "/* ** ".strftime("%m/%d/%y").":"
   let @b= "*/"
   put b
   .-1 put a
