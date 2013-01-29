@@ -13,3 +13,6 @@
 [submodule "bundle/nrrwrgn"]
 	path = bundle/nrrwrgn
 	url = http://github.com/chrisbra/NrrwRgn
+[submodule "bundle/vim-rails"]
+	path = bundle/vim-rails
+	url = https://github.com/tpope/vim-rails.git
