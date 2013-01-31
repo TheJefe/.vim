@@ -26,6 +26,9 @@ set noswapfile
 " Give a shortcut key to NERD Tree
 map <leader>n :NERDTreeToggle<CR>
 
+" Give a shortcut to CtrlP
+map <leader>t :CtrlP<CR>
+
 """""""""""" VimOrganizer settings
 filetype plugin indent on
 
@@ -40,7 +43,7 @@ filetype plugin on
 au BufNewFile,BufRead *.note set filetype=note
 
 " Show trailing spaces as a dot
-set list listchars=trail:.
+set list listchars=trail:.,tab:>>
 
 """"""""""" Functions
 function TrimSpaces()
