@@ -28,6 +28,9 @@ map <leader>n :NERDTreeToggle<CR>
 
 " Give a shortcut to CtrlP
 map <leader>t :CtrlP<CR>
+" save ctrlP cache
+let g:ctrlp_clear_cache_on_exit = 0
+let g:ctrlp_cache_dir = $HOME.'/.cache/ctrlp'
 
 """""""""""" VimOrganizer settings
 filetype plugin indent on
