@@ -32,6 +32,9 @@ map <leader>t :CtrlP<CR>
 let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_cache_dir = $HOME.'/.cache/ctrlp'
 
+" Shortcut for switching window
+map <leader>w <C-W>w
+
 """""""""""" VimOrganizer settings
 filetype plugin indent on
 

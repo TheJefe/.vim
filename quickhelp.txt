@@ -19,6 +19,7 @@ gg ~ goto begining of file
 Ctrl+p ~ while inserting this auto completes
 Ctrl+d ~ page down
 Ctrl+u ~ page up
+<leader>+w ~ switch active window
 
 Marks
 :marks ~ view all marks
@@ -41,3 +42,6 @@ Remove all blank lines
 
 ** CODE
 <leader>cc  ~ comments out a line
+
+Toggle Mini buffer
+<Leader>mbt
