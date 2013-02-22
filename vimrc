@@ -35,6 +35,9 @@ let g:ctrlp_cache_dir = $HOME.'/.cache/ctrlp'
 " Shortcut for switching window
 map <leader>w <C-W>w
 
+" Map vimGREP
+map <leader>g execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
+
 """""""""""" VimOrganizer settings
 filetype plugin indent on
 
