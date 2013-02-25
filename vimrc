@@ -19,6 +19,7 @@ set clipboard=unnamed
 set number
 set ignorecase
 set noswapfile
+set hlsearch
 
 " Map leader
 :let mapleader = ","
