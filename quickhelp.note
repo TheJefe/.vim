@@ -43,5 +43,5 @@ Remove all blank lines
 ** CODE
 <leader>cc  ~ comments out a line
 
-Toggle Mini buffer
-<Leader>mbt
+** find text in a file
+vimgrep /text/gj *.* | copen 
