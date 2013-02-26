@@ -12,7 +12,7 @@ hi hlightLine term=bold cterm=bold gui=bold ctermbg=blue guibg=green
 hi codeFoldStart term=bold cterm=bold gui=bold ctermbg=blue guibg=green
 hi codeFoldEnd term=bold cterm=bold gui=bold ctermbg=blue guibg=green
 
-setlocal foldmethod=marker
+set foldmethod=syntax
 setlocal foldmarker=/*,*/
 set guioptions=aAce
 set clipboard=unnamed
