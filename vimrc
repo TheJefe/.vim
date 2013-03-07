@@ -57,6 +57,9 @@ au BufNewFile,BufRead *.note set filetype=note
 " Show trailing spaces as a dot
 set list listchars=trail:.,tab:>>
 
+" ctags configurations
+let g:ctags_statusline=1
+
 """"""""""" Functions
 function TrimSpaces()
   %s/\s*$//

@@ -43,5 +43,14 @@ Remove all blank lines
 ** CODE
 <leader>cc  ~ comments out a line
 
+** ctags
+install exuberant ctags...
+$ brew install ctags-exuberant
+To create tags, run...
+$ rm tags; ctags --extra=+f --exclude=.git --exclude=log -R *
+
+Ctrl + ]  ~ jump to declaration
+Ctrl + t  ~ backup over the stack
+
 ** find text in a file
 vimgrep /text/gj *.* | copen 
