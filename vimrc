@@ -79,3 +79,6 @@ function NoteBlock()
 
 nnoremap <leader><Space> :call TrimSpaces()<CR>
 nnoremap <leader>f :call NoteBlock()<CR>
+
+" map a command for doing a git pull
+:ca gp !git pull
