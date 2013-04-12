@@ -23,6 +23,10 @@ set ignorecase
 set noswapfile
 set hlsearch
 
+" tab should create 2 spaces
+set expandtab
+set tabstop=2
+
 " Map leader
 :let mapleader = ","
 

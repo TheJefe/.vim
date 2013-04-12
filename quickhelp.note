@@ -20,6 +20,7 @@ Ctrl+p ~ while inserting this auto completes
 Ctrl+d ~ page down
 Ctrl+u ~ page up
 <leader>+w ~ switch active window
+:sh ~ open shell
 
 Marks
 :marks ~ view all marks
@@ -54,3 +55,7 @@ Ctrl + t  ~ backup over the stack
 
 ** find text in a file
 vimgrep /text/gj *.* | copen 
+
+
+** CtrlP
+Note: you can quickly purge the cache by pressing <F5> while inside CtrlP.
