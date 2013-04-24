@@ -28,3 +28,6 @@
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = git@github.com:tpope/vim-fugitive.git
+[submodule "bundle/lusty-juggler"]
+	path = bundle/lusty-juggler
+	url = https://github.com/sjbach/lusty.git
