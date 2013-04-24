@@ -22,6 +22,7 @@ set number
 set ignorecase
 set noswapfile
 set hlsearch
+set nowrap
 
 " tab should create 2 spaces
 set expandtab
