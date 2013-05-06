@@ -43,6 +43,7 @@ let g:ctrlp_cache_dir = $HOME.'/.cache/ctrlp'
 
 " Shortcut for switching window
 map <leader>w <C-W>w
+map <D-ENTER> :set invfullscreen<CR>
 
 " Map vimGREP
 map <leader>g execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>

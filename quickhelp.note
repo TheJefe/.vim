@@ -12,6 +12,7 @@ $ ~ move curser to the end of the line
 w ~ move curser to the right one word
 b ~ move curser to the left one word
 v ~ visual mode for selecting
+Ctrl + v  ~ column select
 viw ~ select word
 G ~ end of file
 1G ~ begining of file
@@ -40,6 +41,14 @@ highlight all text and hit =
 
 Remove all blank lines
 :g/^$/d
+<leader> + Space
+
+** Fullscreen
+  To use macvim's fullscreen mode by default, run this at commandline
+  defaults write org.vim.MacVim MMNativeFullScreen 0
+
+set fu
+set nofu
 
 ** CODE
 <leader>cc  ~ comments out a line
@@ -54,7 +63,7 @@ Ctrl + ]  ~ jump to declaration
 Ctrl + t  ~ backup over the stack
 
 ** find text in a file
-vimgrep /text/gj *.* | copen 
+vimgrep /text/gj *.* | copen
 
 
 ** CtrlP
