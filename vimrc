@@ -67,12 +67,18 @@ set list listchars=trail:.,tab:>>
 " ctags configurations
 let g:ctags_statusline=1
 
+" map a command for doing a git pull
+:ca gp !git pull
+
 """"""""""" Functions
+nnoremap <leader><Space> :call TrimSpaces()<CR>
 function TrimSpaces()
   %s/\s*$//
   ''
 :endfunction
 
+" Create a codefolded note block with the current date
+nnoremap <leader>f :call NoteBlock()<CR>
 function NoteBlock()
   let @a= "/* ** ".strftime("%m/%d/%y").":"
   let @b= "*/"
@@ -80,8 +86,13 @@ function NoteBlock()
   .-1 put a
 :endfunction
 
-nnoremap <leader><Space> :call TrimSpaces()<CR>
-nnoremap <leader>f :call NoteBlock()<CR>
+" Increase or Decrease the current transparency value
+nnoremap <C-q> :call IncreaseTransparency()<CR>
+nnoremap <C-a> :call DecreaseTransparency()<CR>
+function IncreaseTransparency()
+  set transparency+=1
+:endfunction
 
-" map a command for doing a git pull
-:ca gp !git pull
+function DecreaseTransparency()
+  set transparency-=1
+:endfunction
