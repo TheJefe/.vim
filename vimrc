@@ -45,6 +45,10 @@ let g:ctrlp_cache_dir = $HOME.'/.cache/ctrlp'
 map <leader>w <C-W>w
 map <D-ENTER> :set invfullscreen<CR>
 
+" Increase or Decrease the current transparency value
+nnoremap <C-q> :set transparency+=1<CR>
+nnoremap <C-a> :set transparency-=1<CR>
+
 " Map vimGREP
 map <leader>g execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
 
@@ -84,15 +88,4 @@ function NoteBlock()
   let @b= "*/"
   put b
   .-1 put a
-:endfunction
-
-" Increase or Decrease the current transparency value
-nnoremap <C-q> :call IncreaseTransparency()<CR>
-nnoremap <C-a> :call DecreaseTransparency()<CR>
-function IncreaseTransparency()
-  set transparency+=1
-:endfunction
-
-function DecreaseTransparency()
-  set transparency-=1
 :endfunction
