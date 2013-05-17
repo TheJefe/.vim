@@ -31,3 +31,6 @@
 [submodule "bundle/lusty-juggler"]
 	path = bundle/lusty-juggler
 	url = https://github.com/sjbach/lusty.git
+[submodule "bundle/vim-coffee-script"]
+	path = bundle/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script.git
