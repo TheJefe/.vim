@@ -29,8 +29,14 @@ set hidden
 set expandtab
 set tabstop=2
 
+" make the shell source .bashrc and .bash_profle
+set shell=bash\ --login
+
 " Map leader
 :let mapleader = ","
+
+" Map an easier excape
+inoremap jj <ESC>
 
 " Give a shortcut key to NERD Tree
 map <leader>n :NERDTreeToggle<CR>
@@ -40,6 +46,8 @@ map <leader>t :CtrlP<CR>
 " save ctrlP cache
 let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_cache_dir = $HOME.'/.cache/ctrlp'
+set wildignore+=*.png,*.jpg,*.pdf,*.swf
+let g:ctrlp_custom_ignore = '\.git$\|\.o$\|\.app$\|\.dSYM\|\.ipa$\|\.csv\|tags\|public\/images$\|public\/uploads$\|log\|tmp$\|source_maps\|app\/assets\/images\|test\/reports'
 
 " Shortcut for switching window
 map <leader>w <C-W>w
