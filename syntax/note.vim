@@ -3,8 +3,10 @@ syn match codeFoldEnd "\*/"
 
 syn match hlightLine "\*\*.*$"
 syn match hlightLine2 "##.*$"
+syn match hlightLine3 "\~\~.*$"
 hi hlightLine term=bold cterm=bold gui=bold ctermbg=blue guibg=green
 hi hlightLine2 term=bold cterm=bold gui=bold ctermbg=blue guibg=red
+hi hlightLine3 term=bold cterm=bold gui=bold ctermbg=blue guibg=blue
 hi codeFoldStart term=bold cterm=bold gui=bold ctermbg=blue guibg=green
 hi codeFoldEnd term=bold cterm=bold gui=bold ctermbg=blue guibg=green
 
