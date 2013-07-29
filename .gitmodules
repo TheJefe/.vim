@@ -40,3 +40,6 @@
 [submodule "bundle/md-vim"]
 	path = bundle/md-vim
 	url = https://github.com/hughbien/md-vim
+[submodule "bundle/instant-markdown"]
+	path = bundle/instant-markdown
+	url = git@github.com:suan/vim-instant-markdown.git
