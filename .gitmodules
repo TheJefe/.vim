@@ -1,51 +1,52 @@
 [submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
-	url = git@github.com:scrooloose/nerdtree.git
+  path = bundle/nerdtree
+  url = git@github.com:scrooloose/nerdtree.git
 [submodule "bundle/nerdcommenter"]
-	path = bundle/nerdcommenter
-	url = git@github.com:jkoenig311/nerdcommenter.git
+  path = bundle/nerdcommenter
+  url = git@github.com:jkoenig311/nerdcommenter.git
 [submodule "bundle/supertab"]
-	path = bundle/supertab
-	url = http://github.com/ervandew/supertab
+  path = bundle/supertab
+  url = http://github.com/ervandew/supertab
 [submodule "bundle/vimorganizer"]
-	path = bundle/vimorganizer
-	url = git@github.com:hsitz/VimOrganizer.git
+  path = bundle/vimorganizer
+  url = git@github.com:hsitz/VimOrganizer.git
 [submodule "bundle/nrrwrgn"]
-	path = bundle/nrrwrgn
-	url = http://github.com/chrisbra/NrrwRgn
+  path = bundle/nrrwrgn
+  url = http://github.com/chrisbra/NrrwRgn
 [submodule "bundle/vim-rails"]
-	path = bundle/vim-rails
-	url = https://github.com/tpope/vim-rails.git
+  path = bundle/vim-rails
+  url = https://github.com/tpope/vim-rails.git
 [submodule "bundle/vim-surround"]
-	path = bundle/vim-surround
-	url = https://github.com/tpope/vim-surround.git
+  path = bundle/vim-surround
+  url = https://github.com/tpope/vim-surround.git
 [submodule "bundle/ctrlp"]
-	path = bundle/ctrlp
-	url = git@github.com:kien/ctrlp.vim.git
+  path = bundle/ctrlp
+  url = git@github.com:kien/ctrlp.vim.git
 [submodule "bundle/vim-gitgutter"]
-	path = bundle/vim-gitgutter
-	url = git://github.com/airblade/vim-gitgutter.git
+  path = bundle/vim-gitgutter
+  url = git://github.com/airblade/vim-gitgutter.git
 [submodule "bundle/vim-fugitive"]
-	path = bundle/vim-fugitive
-	url = git@github.com:tpope/vim-fugitive.git
+  path = bundle/vim-fugitive
+  url = git@github.com:tpope/vim-fugitive.git
 [submodule "bundle/lusty-juggler"]
-	path = bundle/lusty-juggler
-	url = https://github.com/sjbach/lusty.git
+  path = bundle/lusty-juggler
+  url = https://github.com/sjbach/lusty.git
 [submodule "bundle/vim-coffee-script"]
-	path = bundle/vim-coffee-script
-	url = https://github.com/kchmck/vim-coffee-script.git
+  path = bundle/vim-coffee-script
+  url = https://github.com/kchmck/vim-coffee-script.git
 [submodule "bundle/vim-slim"]
-	path = bundle/vim-slim
-	url = https://github.com/slim-template/vim-slim
+  path = bundle/vim-slim
+  url = https://github.com/slim-template/vim-slim
 [submodule "bundle/md-vim"]
-	path = bundle/md-vim
-	url = https://github.com/hughbien/md-vim
+  path = bundle/md-vim
+  url = https://github.com/hughbien/md-vim
 [submodule "bundle/instant-markdown"]
-	path = bundle/instant-markdown
-	url = git@github.com:suan/vim-instant-markdown.git
+  path = bundle/instant-markdown
+  url = git@github.com:suan/vim-instant-markdown.git
 [submodule "bundle/markdown"]
-	path = bundle/markdown
-	url = git@github.com:tpope/vim-markdown.git
+  path = bundle/markdown
+  url = git@github.com:tpope/vim-markdown.git
 [submodule "bundle/sqlUtilities"]
-	path = bundle/sqlUtilities
-	url = git@github.com:vim-scripts/SQLUtilities.git
+  path = bundle/sqlUtilities
+  url = git@github.com:vim-scripts/SQLUtilities.git
+  ignore = untracked
