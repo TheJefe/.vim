@@ -86,6 +86,7 @@ let g:ctags_statusline=1
 nnoremap <leader><Space> :call TrimSpaces()<CR>
 function TrimSpaces()
   %s/\s*$//
+  %s/\t/  /g
   ''
 :endfunction
 
