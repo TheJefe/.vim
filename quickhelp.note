@@ -41,6 +41,7 @@ ma ~ set mark a to current line
 Pretty JSON
 set syn=js
 highlight all text and hit =
+:%!python -m json.tool
 
 Remove all blank lines
 :g/^$/d
