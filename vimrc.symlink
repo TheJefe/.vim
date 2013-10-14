@@ -29,6 +29,9 @@ set hidden
 set expandtab
 set tabstop=2
 
+" for ruby syntax, use 2 spaces
+autocmd BufRead,BufNewFile *.rb set sw=2 sts=2 et
+
 " make the shell source .bashrc and .bash_profle
 set shell=bash\ --login
 
