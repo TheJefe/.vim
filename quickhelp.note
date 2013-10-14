@@ -38,6 +38,9 @@ ma ~ set mark a to current line
 :set autoread ~ poll file for changes
 :PrettyXML ~ formats an xml file
 
+The following command will sort all lines and remove duplicates (keeping unique lines):
+:sort u
+
 Pretty JSON
 set syn=js
 highlight all text and hit =
