@@ -40,7 +40,7 @@ map <leader>t :CtrlP<CR>
 let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_cache_dir = $HOME.'/.cache/ctrlp'
 set wildignore+=*.png,*.jpg,*.pdf,*.swf
-let g:ctrlp_custom_ignore = '\.git$\|\.o$\|\.app$\|\.dSYM\|\.ipa$\|\.csv\|tags\|public\/images$\|public\/uploads$\|log\|tmp$\|source_maps\|app\/assets\/images\|test\/reports'
+let g:ctrlp_custom_ignore = '\.git$\|\.o$\|\.app$\|\.beam$\|\.dSYM\|\.ipa$\|\.csv\|tags\|public\/images$\|public\/uploads$\|log\|tmp$\|source_maps\|app\/assets\/images\|test\/reports\|node_modules\|bower_components'
 
 " Shortcut for switching window
 map <leader>w <C-W>w
