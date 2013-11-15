@@ -75,6 +75,10 @@ let g:ctags_statusline=1
 " map a command for doing a git pull
 :ca gp !git pull
 
+" don't automatically start instant markdown preview
+" to start run the command :InstantMarkdownPreview
+let g:instant_markdown_autostart = 0
+
 """"""""""" Functions
 nnoremap <leader><Space> :call TrimSpaces()<CR>
 function TrimSpaces()
