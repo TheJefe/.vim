@@ -75,6 +75,9 @@ let g:ctags_statusline=1
 " map a command for doing a git pull
 :ca gp !git pull
 
+" Open markdown files with Chrome.
+autocmd BufEnter *.md exe 'noremap <F5> :!open -a "Google Chrome.app" %:p<CR>'
+
 " don't automatically start instant markdown preview
 " to start run the command :InstantMarkdownPreview
 let g:instant_markdown_autostart = 0
