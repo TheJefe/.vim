@@ -50,6 +50,10 @@ Remove all blank lines
 :g/^$/d
 <leader> + Space
 
+** diff
+get your data in split windows, then in each run
+:diffthis
+
 ** Fullscreen
   To use macvim's fullscreen mode by default, run this at commandline
   defaults write org.vim.MacVim MMNativeFullScreen 0
@@ -68,6 +72,8 @@ $ rm tags; ctags --extra=+f --exclude=.git --exclude=log -R *
 
 Ctrl + ]  ~ jump to declaration
 Ctrl + t  ~ backup over the stack
+C-] - go to definition
+C-W C-] - Open the definition in a horizontal split
 
 ** find text in a file
 vimgrep /text/gj *.* | copen
