@@ -3,13 +3,10 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 "color anotherdark
-if &term == "xterm-color"
- fixdel
-endif
-set t_Co=256
+"color solarized
 
 set wildmenu
-
+set guifont=Inconsolata\ For\ Powerline
 set foldmethod=syntax
 setlocal foldmarker=/*,*/
 set guioptions=aAce
@@ -93,8 +90,9 @@ autocmd BufEnter *.md exe 'noremap <F5> :!open -a "Google Chrome.app" %:p<CR>'
 let g:instant_markdown_autostart = 0
 
 " enable the numpad
-if &term=="xterm" || &term=="xterm-color"
-  set t_Co=8
+if &term=="xterm" || &term=="xterm-color" || &term=="xterm-256color"
+  fixdel
+  set t_Co=256
   set t_Sb=^[4%dm
   set t_Sf=^[3%dm
   :imap <Esc>Oq 1
