@@ -53,6 +53,9 @@ nnoremap <C-a> :set transparency-=1<CR>
 " Map vimGREP
 map <leader>g execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
 
+" vim-airline always on
+set laststatus=2
+
 """""""""""" VimOrganizer settings
 filetype plugin indent on
 
