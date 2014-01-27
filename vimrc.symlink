@@ -3,6 +3,12 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 "color anotherdark
+if &term == "xterm-color"
+ fixdel
+endif
+set t_Co=256
+
+set wildmenu
 
 set foldmethod=syntax
 setlocal foldmarker=/*,*/
@@ -55,6 +61,7 @@ map <leader>g execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
 
 " vim-airline always on
 set laststatus=2
+let g:airline_powerline_fonts = 1
 
 """""""""""" VimOrganizer settings
 filetype plugin indent on
