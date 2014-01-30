@@ -49,6 +49,12 @@ let g:ctrlp_custom_ignore = '\.git$\|\.o$\|\.app$\|\.beam$\|\.dSYM\|\.ipa$\|\.cs
 map <leader>w <C-W>w
 map <D-ENTER> :set invfullscreen<CR>
 
+" vertical split
+nnoremap <leader>v <C-w>v<C-w>l
+
+" clear the last highlighted search
+nnoremap <esc> :noh<return><esc>
+
 " Increase or Decrease the current transparency value
 nnoremap <C-q> :set transparency+=1<CR>
 nnoremap <C-a> :set transparency-=1<CR>
