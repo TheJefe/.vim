@@ -55,12 +55,12 @@ nnoremap <leader>v <C-w>v<C-w>l
 " clear the last highlighted search
 nnoremap <esc> :noh<return><esc>
 
+" find current word in quickfix
+nnoremap <leader>fw :execute "vimgrep ".expand("<cword>")." %"<cr>:copen<cr>
+
 " Increase or Decrease the current transparency value
 nnoremap <C-q> :set transparency+=1<CR>
 nnoremap <C-a> :set transparency-=1<CR>
-
-" Map vimGREP
-map <leader>g execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
 
 " vim-airline always on
 set laststatus=2
