@@ -19,18 +19,12 @@
 [submodule "bundle/vim-surround"]
   path = bundle/vim-surround
   url = https://github.com/tpope/vim-surround.git
-[submodule "bundle/ctrlp"]
-  path = bundle/ctrlp
-  url = git@github.com:kien/ctrlp.vim.git
 [submodule "bundle/vim-gitgutter"]
   path = bundle/vim-gitgutter
   url = git://github.com/airblade/vim-gitgutter.git
 [submodule "bundle/vim-fugitive"]
   path = bundle/vim-fugitive
   url = git@github.com:tpope/vim-fugitive.git
-[submodule "bundle/lusty-juggler"]
-  path = bundle/lusty-juggler
-  url = https://github.com/sjbach/lusty.git
 [submodule "bundle/vim-coffee-script"]
   path = bundle/vim-coffee-script
   url = https://github.com/kchmck/vim-coffee-script.git
@@ -59,3 +53,9 @@
 [submodule "bundle/airline"]
 	path = bundle/airline
 	url = git@github.com:bling/vim-airline.git
+[submodule "bundle/unite"]
+	path = bundle/unite
+	url = git@github.com:Shougo/unite.vim.git
+[submodule "bundle/vimproc.vim"]
+	path = bundle/vimproc.vim
+	url = git@github.com:Shougo/vimproc.vim.git
