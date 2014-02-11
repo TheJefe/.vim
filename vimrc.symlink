@@ -25,25 +25,49 @@ set tabstop=2
 " for ruby syntax, use 2 spaces
 autocmd BufRead,BufNewFile *.rb set sw=2 sts=2 et
 
-" make the shell source .bashrc and .bash_profle
-set shell=bash\ --login
-
 " Map leader
 :let mapleader = ","
+
+" unite configurations
+call unite#filters#matcher_default#use(['matcher_fuzzy'])
+call unite#filters#sorter_default#use(['sorter_rank'])
+call unite#custom_source('file_rec,file_rec/async,file_mru,file,buffer,grep',
+      \ 'ignore_pattern', join([
+      \ '\.git/', '\.cache/',
+      \ ], '\|'))
+let g:unite_split_rule = "botright"
+let g:unite_force_overwrite_statusline = 0
+"nnoremap <C-p> :Unite -start-insert file_rec/async:!<CR>
+"nnoremap <leader>t :Unite -start-insert file_rec/async:!<CR>
+nnoremap <space>/ :Unite grep:.<CR>
+let g:unite_source_history_yank_enable = 1
+nnoremap <space>y :Unite history/yank<CR>
+nnoremap <space>s :Unite -quick-match buffer<CR>
+
+" Give a shortcut to CtrlP
+map <leader>t :CtrlP<CR>
+map <C-p> :CtrlP<CR>
+" save ctrlP cache
+let g:ctrlp_clear_cache_on_exit = 0
+let g:ctrlp_cache_dir = $HOME.'/.cache/ctrlp'
+let g:ctrlp_custom_ignore = '\.git$\|\.o$\|\.app$\|\.beam$\|\.dSYM\|\.ipa$\|\.csv\|tags\|public\/images$\|public\/uploads$\|log\|tmp$\|source_maps\|app\/assets\/images\|test\/reports\|node_modules\|bower_components'
+
+let g:ctrlp_cmd = 'CtrlPLastMode'
+let g:ctrlp_extensions = ['buffertag', 'tag', 'line', 'dir']
+
+" make the shell source .bashrc and .bash_profle
+set shell=bash\ --login
 
 " Map an easier excape
 inoremap jj <ESC>
 
+" mapping the write command
+nnoremap ss :w<CR>
+
 " Give a shortcut key to NERD Tree
 map <leader>n :NERDTreeToggle<CR>
 
-" Give a shortcut to CtrlP
-map <leader>t :CtrlP<CR>
-" save ctrlP cache
-let g:ctrlp_clear_cache_on_exit = 0
-let g:ctrlp_cache_dir = $HOME.'/.cache/ctrlp'
 set wildignore+=*.png,*.jpg,*.pdf,*.swf
-let g:ctrlp_custom_ignore = '\.git$\|\.o$\|\.app$\|\.beam$\|\.dSYM\|\.ipa$\|\.csv\|tags\|public\/images$\|public\/uploads$\|log\|tmp$\|source_maps\|app\/assets\/images\|test\/reports\|node_modules\|bower_components'
 
 " Shortcut for switching window
 map <leader>w <C-W>w
@@ -53,7 +77,7 @@ map <D-ENTER> :set invfullscreen<CR>
 nnoremap <leader>v <C-w>v<C-w>l
 
 " clear the last highlighted search
-nnoremap <esc> :noh<return><esc>
+nnoremap <leader>h :noh<return><esc>
 
 " find current word in quickfix
 nnoremap <leader>fw :execute "vimgrep ".expand("<cword>")." %"<cr>:copen<cr>
@@ -89,7 +113,7 @@ let g:ctags_statusline=1
 :ca gp !git pull
 
 " Open markdown files with Chrome.
-autocmd BufEnter *.md exe 'noremap <F5> :!open -a "Google Chrome.app" %:p<CR>'
+autocmd BufEnter *.md exe 'nnoremap <F5> :!open -a "Google Chrome.app" %:p<CR>'
 
 " don't automatically start instant markdown preview
 " to start run the command :InstantMarkdownPreview
