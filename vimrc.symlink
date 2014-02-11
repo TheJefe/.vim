@@ -37,12 +37,20 @@ call unite#custom_source('file_rec,file_rec/async,file_mru,file,buffer,grep',
       \ ], '\|'))
 let g:unite_split_rule = "botright"
 let g:unite_force_overwrite_statusline = 0
-nnoremap <C-p> :Unite -start-insert file_rec/async:!<CR>
-nnoremap <leader>t :Unite -start-insert file_rec/async:!<CR>
+"nnoremap <C-p> :Unite -start-insert file_rec/async:!<CR>
+"nnoremap <leader>t :Unite -start-insert file_rec/async:!<CR>
 nnoremap <space>/ :Unite grep:.<CR>
 let g:unite_source_history_yank_enable = 1
 nnoremap <space>y :Unite history/yank<CR>
 nnoremap <space>s :Unite -quick-match buffer<CR>
+
+" Give a shortcut to CtrlP
+map <leader>t :CtrlP<CR>
+map <C-p> :CtrlP<CR>
+" save ctrlP cache
+let g:ctrlp_clear_cache_on_exit = 0
+let g:ctrlp_cache_dir = $HOME.'/.cache/ctrlp'
+let g:ctrlp_custom_ignore = '\.git$\|\.o$\|\.app$\|\.beam$\|\.dSYM\|\.ipa$\|\.csv\|tags\|public\/images$\|public\/uploads$\|log\|tmp$\|source_maps\|app\/assets\/images\|test\/reports\|node_modules\|bower_components'
 
 " make the shell source .bashrc and .bash_profle
 set shell=bash\ --login
