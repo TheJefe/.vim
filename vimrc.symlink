@@ -50,6 +50,9 @@ set shell=bash\ --login
 " Map an easier excape
 inoremap jj <ESC>
 
+" mapping the write command
+nnoremap ss :w<CR>
+
 " Give a shortcut key to NERD Tree
 map <leader>n :NERDTreeToggle<CR>
 
