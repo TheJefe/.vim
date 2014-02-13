@@ -7,12 +7,6 @@
 [submodule "bundle/supertab"]
   path = bundle/supertab
   url = http://github.com/ervandew/supertab
-[submodule "bundle/vimorganizer"]
-  path = bundle/vimorganizer
-  url = git@github.com:hsitz/VimOrganizer.git
-[submodule "bundle/nrrwrgn"]
-  path = bundle/nrrwrgn
-  url = http://github.com/chrisbra/NrrwRgn
 [submodule "bundle/vim-rails"]
   path = bundle/vim-rails
   url = https://github.com/tpope/vim-rails.git
