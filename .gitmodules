@@ -36,23 +36,23 @@
   url = git@github.com:vim-scripts/SQLUtilities.git
   ignore = untracked
 [submodule "bundle/vim-git-log"]
-	path = bundle/vim-git-log
-	url = git@github.com:kablamo/vim-git-log.git
+  path = bundle/vim-git-log
+  url = git@github.com:kablamo/vim-git-log.git
 [submodule "bundle/gist-vim"]
-	path = bundle/gist-vim
-	url = git@github.com:mattn/gist-vim.git
+  path = bundle/gist-vim
+  url = git@github.com:mattn/gist-vim.git
 [submodule "bundle/webapi-vim"]
-	path = bundle/webapi-vim
-	url = git@github.com:mattn/webapi-vim.git
+  path = bundle/webapi-vim
+  url = git@github.com:mattn/webapi-vim.git
 [submodule "bundle/airline"]
-	path = bundle/airline
-	url = git@github.com:bling/vim-airline.git
+  path = bundle/airline
+  url = git@github.com:bling/vim-airline.git
 [submodule "bundle/unite"]
-	path = bundle/unite
-	url = git@github.com:Shougo/unite.vim.git
+  path = bundle/unite
+  url = git@github.com:Shougo/unite.vim.git
 [submodule "bundle/vimproc.vim"]
-	path = bundle/vimproc.vim
-	url = git@github.com:Shougo/vimproc.vim.git
+  path = bundle/vimproc.vim
+  url = git@github.com:Shougo/vimproc.vim.git
 [submodule "bundle/ctrlp"]
-	path = bundle/ctrlp
-	url = git@github.com:kien/ctrlp.vim.git
+  path = bundle/ctrlp
+  url = git@github.com:kien/ctrlp.vim.git
