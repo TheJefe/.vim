@@ -30,12 +30,12 @@ autocmd BufRead,BufNewFile *.rb set sw=2 sts=2 et
 :let mapleader = ","
 
 " unite configurations
-call unite#filters#matcher_default#use(['matcher_fuzzy'])
-call unite#filters#sorter_default#use(['sorter_rank'])
-call unite#custom_source('file_rec,file_rec/async,file_mru,file,buffer,grep',
-      \ 'ignore_pattern', join([
-      \ '\.git/', '\.cache/',
-      \ ], '\|'))
+"call unite#filters#matcher_default#use(['matcher_fuzzy'])
+"call unite#filters#sorter_default#use(['sorter_rank'])
+"call unite#custom_source('file_rec,file_rec/async,file_mru,file,buffer,grep',
+      "\ 'ignore_pattern', join([
+      "\ '\.git/', '\.cache/',
+      "\ ], '\|'))
 let g:unite_split_rule = "botright"
 let g:unite_force_overwrite_statusline = 0
 "nnoremap <C-p> :Unite -start-insert file_rec/async:!<CR>
