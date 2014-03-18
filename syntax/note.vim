@@ -16,3 +16,4 @@ setlocal formatoptions+=r
 
 setlocal foldmethod=marker
 setlocal foldmarker=/*,*/
+setlocal foldlevel=0
