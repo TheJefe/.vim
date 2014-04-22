@@ -22,6 +22,7 @@ set hidden
 " tab should create 2 spaces
 set expandtab
 set tabstop=2
+set shiftwidth=2
 
 " for ruby syntax, use 2 spaces
 autocmd BufRead,BufNewFile *.rb set sw=2 sts=2 et
