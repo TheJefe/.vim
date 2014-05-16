@@ -26,6 +26,13 @@ z. — to put the line with the cursor at the center,
 zt — to put the line with the cursor at the top
 zb — to put the line with the cursor at the bottom of the screen.
 
+** change case
+g~
+gu
+gU
+
+gx - open url in a browser
+
 Marks
 :marks ~ view all marks
 :delmarks! ~ deletes all marks
