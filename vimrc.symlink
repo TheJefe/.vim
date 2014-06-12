@@ -92,6 +92,10 @@ nnoremap <C-a> :set transparency-=1<CR>
 set laststatus=2
 let g:airline_powerline_fonts = 1
 
+python import sys; sys.path.append("~/Library/Python/2.7/lib/python/site-packages")
+"python from powerline.bindings.vim import source_plugin; source_plugin()
+source /Users/Jeff/Library/Python/2.7/lib/python/site-packages/powerline/bindings/vim/plugin/powerline.vim
+
 """""""""""" VimOrganizer settings
 filetype plugin indent on
 
