@@ -47,8 +47,8 @@ nnoremap <space>y :Unite history/yank<CR>
 nnoremap <space>s :Unite -quick-match buffer<CR>
 
 " Give a shortcut to CtrlP
-map <leader>t :CtrlP<CR>
 map <C-p> :CtrlP<CR>
+
 " save ctrlP cache
 let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_cache_dir = $HOME.'/.cache/ctrlp'
@@ -155,6 +155,76 @@ function TrimSpaces()
   %s/\t/  /g
   ''
 :endfunction
+
+function IsMinitest(filename)
+  let split_filename = split(a:filename, ":")[0]
+  return match(split_filename, '_test.rb$') != -1
+:endfunction
+
+function IsRspec(filename)
+  let split_filename = split(a:filename, ":")[0]
+  return match(split_filename, '_spec.rb$') != -1
+:endfunction
+
+function IsJasmine(filename)
+  let split_filename = split(a:filename, ":")[0]
+  return match(split_filename, '_spec.js$') != -1
+:endfunction
+
+function IsExUnit(filename)
+  let split_filename = split(a:filename, ":")[0]
+  return match(split_filename, '_test.exs$') != -1
+:endfunction
+
+function RunTests(filename)
+    " Write the file and run tests for the given filename
+    :w
+    :silent !echo;echo;echo;echo;echo
+
+    if IsMinitest(a:filename)
+      let command_to_run = "m " . a:filename
+    elseif IsRspec(a:filename)
+      let command_to_run = "rspec " . a:filename
+    elseif IsJasmine(a:filename)
+      let command_to_run = "jasmine-node " . a:filename
+    elseif IsExUnit(a:filename)
+      let command_to_run = "elixir " . a:filename
+    end
+
+    call VimuxRunCommand(command_to_run)
+    redraw!
+:endfunction
+
+function SetTestFile()
+    " Set the spec file that tests will be run for.
+    let t:grb_test_file=@%
+:endfunction
+
+function RunTestFile(...)
+    if a:0
+        let command_suffix = a:1
+    else
+        let command_suffix = ""
+    endif
+
+    " Run the tests for the previously-marked file.
+    let in_spec_file = IsMinitest(expand("%")) || IsRspec(expand("%")) || IsJasmine(expand("%")) || IsExUnit(expand("%"))
+    if in_spec_file
+        call SetTestFile()
+    elseif !exists("t:grb_test_file")
+        return
+    end
+    call RunTests(t:grb_test_file . command_suffix)
+:endfunction
+
+function RunNearestTest()
+    let spec_line_number = line('.')
+    call RunTestFile(":" . spec_line_number)
+:endfunction
+
+map <leader>t :call RunTestFile()<cr><cr>
+map <leader>T :call RunNearestTest()<cr><cr>
+map <leader>a :call RunTests('spec')<cr><cr>
 
 " Create a codefolded note block with the current date
 nnoremap <leader>f :call NoteBlock()<CR>
