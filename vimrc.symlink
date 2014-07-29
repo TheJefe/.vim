@@ -48,6 +48,7 @@ nnoremap <space>s :Unite -quick-match buffer<CR>
 
 " Give a shortcut to CtrlP
 map <C-p> :CtrlP<CR>
+map <leader>r :CtrlP<CR>
 
 " save ctrlP cache
 let g:ctrlp_clear_cache_on_exit = 0
