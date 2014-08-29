@@ -1,3 +1,36 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" Plugins ======================================
+Plugin 'gmarik/Vundle.vim'
+Plugin 'bogado/file-line'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Shougo/unite'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'Shougo/vimproc.vim'
+Plugin 'bling/vim-airline'
+Plugin 'mattn/gist-vim'
+Plugin 'mattn/webapi-vim' "required for gist vim
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'tpope/vim-rails'
+Plugin 'benmills/vimux'
+Plugin 'tpope/vim-markdown'
+Plugin 'vim-scripts/SQLUtilities'
+Plugin 'tpope/vim-fugitive'
+Plugin 'slim-template/vim-slim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'hughbien/md-vim'
+Plugin 'ervandew/supertab'
+Plugin 'kablamo/vim-git-log'
+Plugin 'tpope/vim-surround'
+" END Plugins ==================================
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" END Vundle
 
 set wildmenu
 set guifont=Inconsolata\ For\ Powerline

@@ -3,28 +3,26 @@
 ### Installation:
 
     git clone git@github.com:jkoenig311/.vim.git ~/.vim
+    git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    vim
+    :BundleInstall
+
+## Gitgutter started being slowing and introducing bugs at some point, so lets checkout a known good version
+    cd ~/.vim/bundle/vim-gitgutter
+    git checkout dbfbbb4
 
 ## Create symlinks:
 
     ln -s ~/.vim/vimrc ~/.vimrc
     ln -s ~/.vim/gvimrc ~/.gvimrc
 
-## Switch to the `~/.vim` directory, and fetch submodules:
-
-    cd ~/.vim
-    git submodule init
-    git submodule update
-
 ## Build vimproc
     cd ~/.vim/bundle/vimproc.vim/
     make
 
-### Install new plugins as submodules:
+### How to Install new plugins
 
-    cd ~/.vim
-    git submodule add http://github.com/tpope/vim-fugitive.git bundle/fugitive
-    git add .
-    git commit -m "Install Fugitive.vim bundle as a submodule."
+Open vimrc, add a line `Plugin 'tpope/vim-fugitive'`
 
 ### Upgrade all bundled plugins:
 
