@@ -33,12 +33,11 @@ gU
 
 gx - open url in a browser
 
-Marks
+** Marks
 :marks ~ view all marks
 :delmarks! ~ deletes all marks
 ma ~ set mark a to current line
 'a ~ goto mark a... or sub "a" with another mark identifier
-
 
 :e ~ reload from disk
 :y *  ~ copy to system clipboard
@@ -53,8 +52,7 @@ set syn=js
 highlight all text and hit =
 :%!python -m json.tool
 
-Remove all blank lines
-:g/^$/d
+** Remove all blank lines
 <leader> + Space
 
 ** diff
@@ -82,9 +80,11 @@ Ctrl + t  ~ backup over the stack
 C-] - go to definition
 C-W C-] - Open the definition in a horizontal split
 
-** find text in a file
-vimgrep /text/gj *.* | copen
-
+** Open new buffers
+:new will create a split window with an unnamed buffer.
+:enew will open one in the current window.
+:vnew will open one in a vertically split window.
+:tabnew will open one in a new tab.
 
 ** CtrlP
 Note: you can quickly purge the cache by pressing <F5> while inside CtrlP.
