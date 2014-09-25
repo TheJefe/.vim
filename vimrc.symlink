@@ -32,6 +32,7 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 " END Vundle
 
+colorscheme anotherdark
 set wildmenu
 set guifont=Inconsolata\ For\ Powerline
 set foldmethod=syntax
