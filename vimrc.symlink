@@ -26,6 +26,7 @@ Plugin 'hughbien/md-vim'
 Plugin 'ervandew/supertab'
 Plugin 'kablamo/vim-git-log'
 Plugin 'tpope/vim-surround'
+Plugin 'altercation/vim-colors-solarized'
 " END Plugins ==================================
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
