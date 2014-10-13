@@ -59,6 +59,9 @@ autocmd BufRead,BufNewFile *.rb set sw=2 sts=2 et
 " Map leader
 :let mapleader = ","
 
+" insert a single character
+:nmap <C-i> i_<Esc>r
+
 " unite configurations
 "call unite#filters#matcher_default#use(['matcher_fuzzy'])
 "call unite#filters#sorter_default#use(['sorter_rank'])
