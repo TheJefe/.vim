@@ -91,7 +91,14 @@ map <leader>w <C-W>w
 map <D-ENTER> :set invfullscreen<CR>
 
 " vertical split
-nnoremap <leader>v <C-w>v<C-w>l
+nnoremap <leader>v <C-w>v<C-w>l:enew<CR>
+" new tab
+nnoremap gT :tabe<CR>
+
+" ctrl-\ open in tag in new tab
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+" alt-] open in tag in vertical split
+map <leader>g :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
 " clear the last highlighted search
 nnoremap <leader>h :noh<return><esc>
