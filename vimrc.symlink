@@ -135,7 +135,7 @@ let g:ctags_statusline=1
 :ca gp !git pull
 
 " Open markdown files with Chrome.
-autocmd BufEnter *.md exe 'nnoremap <F5> :!open -a "Google Chrome.app" %:p<CR>'
+nnoremap <F5> :silent !open -a "Google Chrome.app" "%:p"<CR> :redraw!<CR>
 
 " enable the numpad
 if &term=="xterm" || &term=="xterm-color" || &term=="xterm-256color"
