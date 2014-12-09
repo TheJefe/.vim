@@ -8,7 +8,6 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'bogado/file-line'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
-Plugin 'Shougo/unite.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'bling/vim-airline'
@@ -61,22 +60,6 @@ autocmd BufRead,BufNewFile *.rb set sw=2 sts=2 et
 
 " insert a single character
 :nmap <C-i> i_<Esc>r
-
-" unite configurations
-"call unite#filters#matcher_default#use(['matcher_fuzzy'])
-"call unite#filters#sorter_default#use(['sorter_rank'])
-"call unite#custom_source('file_rec,file_rec/async,file_mru,file,buffer,grep',
-      "\ 'ignore_pattern', join([
-      "\ '\.git/', '\.cache/',
-      "\ ], '\|'))
-let g:unite_split_rule = "botright"
-let g:unite_force_overwrite_statusline = 0
-"nnoremap <C-p> :Unite -start-insert file_rec/async:!<CR>
-"nnoremap <leader>t :Unite -start-insert file_rec/async:!<CR>
-nnoremap <space>/ :Unite grep:.<CR>
-let g:unite_source_history_yank_enable = 1
-nnoremap <space>y :Unite history/yank<CR>
-nnoremap <space>s :Unite -quick-match buffer<CR>
 
 " Give a shortcut to CtrlP
 map <C-p> :CtrlP<CR>
