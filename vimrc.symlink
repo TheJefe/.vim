@@ -98,6 +98,9 @@ nnoremap <leader>v <C-w>v<C-w>l:enew<CR>
 " new tab
 nnoremap gT :tabe<CR>
 
+" source current file
+map <leader>s :so %<CR>
+
 " ctrl-\ open in tag in new tab
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 " alt-] open in tag in vertical split
