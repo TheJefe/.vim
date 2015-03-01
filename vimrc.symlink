@@ -52,6 +52,7 @@ set noswapfile
 set hlsearch
 set nowrap
 set hidden
+set omnifunc=syntaxcomplete#Complete
 
 " tab should create 2 spaces
 set expandtab
@@ -136,11 +137,17 @@ set list listchars=trail:.,tab:>>
 " ctags configurations
 let g:ctags_statusline=1
 
+" Gist configs
+let g:gist_show_privates = 1
+
 " map a command for doing a git pull
 :ca gp !git pull
 
 " Open markdown files with Chrome.
 nnoremap <F5> :silent !open -a "Google Chrome.app" "%:p"<CR> :redraw!<CR>
+
+" Trying a better git grep
+command -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | cw | redraw!
 
 " used for pr-review plugin
 "let g:pr_review_github_repos = ['thinkthroughmath/mathjs-rest','jnicklas/capybara','rspec/rspec-rails']
