@@ -152,7 +152,7 @@ command -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | cw | redraw!
 " used for pr-review plugin
 "let g:pr_review_github_repos = ['thinkthroughmath/mathjs-rest','jnicklas/capybara','rspec/rspec-rails']
 "let g:pr_review_filter= {'state': 'open','sort': 'updated', 'direction': 'asc'}
-let g:pr_review_github_repos = ['thinkthroughmath/apangea','thinkthroughmath/reporting','thinkthroughmath/lesson-player','thinkthroughmath/live_teaching']
+let g:pr_review_github_repos = ['thinkthroughmath/apangea','thinkthroughmath/reporting','thinkthroughmath/lesson-player','thinkthroughmath/live_teaching','thinkthroughmath/avatar-builder']
 let g:pr_review_filter= {'state': 'open', 'labels': 'Needs QA', 'sort': 'updated', 'direction': 'asc'}
 let g:pr_review_merge_command = 'git stash; git checkout rc; git reset --hard origin/rc; git pull; git pull --no-ff --no-edit origin'
 
