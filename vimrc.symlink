@@ -10,7 +10,6 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'Shougo/vimproc.vim'
-Plugin 'bling/vim-airline'
 Plugin 'mattn/gist-vim'
 Plugin 'mattn/webapi-vim' "required for gist vim
 Plugin 'kchmck/vim-coffee-script'
@@ -121,8 +120,9 @@ nnoremap <C-a> :set transparency-=1<CR>
 " vim-airline always on
 set laststatus=2
 let g:airline_powerline_fonts = 1
-python import sys; sys.path.append("~/Library/Python/2.7/lib/python/site-packages")
-"python from powerline.bindings.vim import source_plugin; source_plugin()
+
+" Powerline configs
+python import sys; sys.path.append("/lib/python/2.7/site-packages")
 source ~/.vim/plugin/powerline.vim
 
 "  syntax automatically selected based on extension
