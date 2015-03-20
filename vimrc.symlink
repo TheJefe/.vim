@@ -17,6 +17,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'benmills/vimux'
 Plugin 'tpope/vim-markdown'
 Plugin 'vim-scripts/SQLUtilities'
+Plugin 'vim-scripts/taglist.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'slim-template/vim-slim'
 Plugin 'kien/ctrlp.vim'
@@ -91,6 +92,10 @@ nnoremap ss :w<CR>
 
 " Give a shortcut key to NERD Tree
 map <leader>n :NERDTreeToggle<CR>
+
+" Give a shortcut key to TagList
+map <leader>m :TlistToggle<CR>
+let Tlist_GainFocus_On_ToggleOpen = 1
 
 " Shortcut for switching window
 map <leader>w <C-W>w
