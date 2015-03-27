@@ -32,11 +32,15 @@ Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'godlygeek/tabular'
 Plugin 'jkoenig311/vim-prreview'
 Plugin 'jkoenig311/github-issues.vim'
+Plugin 'bling/vim-airline'
 " END Plugins ==================================
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 " END Vundle
+
+" Required for neovim
+let g:python_host_prog='/usr/local/bin/python'
 
 colorscheme anotherdark
 set wildmenu
@@ -127,8 +131,10 @@ set laststatus=2
 let g:airline_powerline_fonts = 1
 
 " Powerline configs
-python import sys; sys.path.append("/lib/python/2.7/site-packages")
-source ~/.vim/plugin/powerline.vim
+" Disabling these and using airline instead so that I can use neovim as well.
+" See also: https://github.com/powerline/powerline/issues/1287
+"python import sys; sys.path.append("/lib/python/2.7/site-packages")
+"source ~/.vim/plugin/powerline.vim
 
 "  syntax automatically selected based on extension
 syntax on
