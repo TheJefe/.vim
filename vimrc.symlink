@@ -30,8 +30,8 @@ Plugin 'mtth/scratch.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'godlygeek/tabular'
-Plugin 'jkoenig311/vim-prreview'
-Plugin 'jkoenig311/github-issues.vim'
+Plugin 'thejefe/vim-prreview'
+Plugin 'thejefe/github-issues.vim'
 Plugin 'bling/vim-airline'
 " END Plugins ==================================
 " All of your Plugins must be added before the following line
