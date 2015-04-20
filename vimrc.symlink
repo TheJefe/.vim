@@ -210,6 +210,18 @@ function TrimSpaces()
   ''
 :endfunction
 
+" Used to switch between QA and Dev PRs
+function TogglePRList()
+  let dev_pr_review_query = "state:open type:pr label:\"Needs Code Review\""
+  let qa_pr_review_query = "state:open type:pr label:\"Needs QA\""
+
+  if g:pr_review_query == dev_pr_review_query
+    let g:pr_review_query = qa_pr_review_query
+  else
+    let g:pr_review_query = dev_pr_review_query
+  endif
+:endfunction
+
 function IsMinitest(filename)
   let split_filename = split(a:filename, ":")[0]
   return match(split_filename, '_test.rb$') != -1
