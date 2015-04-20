@@ -136,6 +136,11 @@ let g:airline_powerline_fonts = 1
 "python import sys; sys.path.append("/lib/python/2.7/site-packages")
 "source ~/.vim/plugin/powerline.vim
 
+if has('nvim')
+  " Neovim terminal switch to normal mode mapping
+  tnoremap <Esc> <c-\><c-n>
+endif
+
 "Realtime gitgutter is soooooooo slow
 let g:gitgutter_realtime=0
 
