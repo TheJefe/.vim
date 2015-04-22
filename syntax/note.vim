@@ -1,12 +1,13 @@
 syn match codeFoldStart "/\*"
 syn match codeFoldEnd "\*/"
 
-syn match hlightLine "\*\*.*$"
-syn match hlightLine2 "##.*$"
-syn match hlightLine3 "\~\~.*$"
-hi hlightLine term=bold cterm=bold gui=bold ctermbg=green ctermfg=black guifg=black guibg=green
-hi hlightLine2 term=bold cterm=bold gui=bold ctermbg=red guibg=red
-hi hlightLine3 term=bold cterm=bold gui=bold ctermbg=19 guibg=blue
+syn match comment1 "\*\*.*$"
+syn match comment2 "##.*$"
+syn match comment3 "\~\~.*$"
+
+hi comment1 term=bold cterm=bold gui=bold ctermbg=green ctermfg=black guifg=black guibg=green
+hi comment2 term=bold cterm=bold gui=bold ctermbg=red guibg=red
+hi comment3 term=bold cterm=bold gui=bold ctermbg=19 guibg=blue
 hi codeFoldStart term=bold cterm=bold gui=bold ctermbg=green ctermfg=black guifg=black guibg=green
 hi codeFoldEnd term=bold cterm=bold gui=bold ctermbg=green ctermfg=black guifg=black guibg=green
 
