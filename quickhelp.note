@@ -36,6 +36,10 @@ gU
 
 gx - open url in a browser
 
+** Change word
+ciw - change current word
+cc - change entire current line
+
 ** Marks
 :marks ~ view all marks
 :delmarks! ~ deletes all marks
