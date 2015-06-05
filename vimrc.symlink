@@ -161,6 +161,9 @@ filetype on
 filetype plugin on
 au BufNewFile,BufRead *.note set filetype=note
 
+" Custom nerd commenter mapping
+let g:NERDCustomDelimiters = { 'note': { 'left': '~~'} }
+
 " Show trailing spaces as a dot
 set list listchars=trail:.,tab:>>
 
