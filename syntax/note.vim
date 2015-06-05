@@ -15,6 +15,11 @@ hi codeFoldEnd term=bold cterm=bold gui=bold ctermbg=green ctermfg=black guifg=b
 set comments=sl:-,mb:-,elx:;
 setlocal formatoptions+=r
 
+" allows blocks of ruby syntax's in a file
+syntax include @RUBY syntax/ruby.vim
+syntax region rubySnip matchgroup=Snip start="@begin=ruby@" end="@end=ruby@" contains=@RUBY
+hi link Snip SpecialComment
+
 setlocal foldmethod=marker
 setlocal foldmarker=/*,*/
 setlocal foldlevel=0
