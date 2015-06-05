@@ -182,6 +182,8 @@ let g:pr_review_merge_command = 'git stash; git checkout rc; git reset --hard or
 " Used for github-issues
 let g:github_access_token = '~/.github-issues.vim'
 
+let g:github_dashboard = { 'username': 'you', 'password': $GITHUB_TOKEN }
+
 " enable the numpad
 if &term=="xterm" || &term=="xterm-color" || &term=="xterm-256color"
   fixdel
