@@ -130,6 +130,10 @@ nnoremap <leader>fw :execute "vimgrep ".expand("<cword>")." %"<cr>:copen<cr>
 nnoremap <C-q> :set transparency+=1<CR>
 nnoremap <C-a> :set transparency-=1<CR>
 
+" regenerate ctags
+set tags=./tags,tags,coffee.tags
+map <Leader>c :!rm tags; ctags --extra=+f --exclude=coverage --exclude=.git --exclude=vendor --exclude=log --exclude=node_modules --exclude=public -R *;rm coffee.tags; coffeetags -R -f coffee.tags<CR><CR>
+
 " vim-airline always on
 set laststatus=2
 let g:airline_powerline_fonts = 1
