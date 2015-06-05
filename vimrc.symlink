@@ -34,6 +34,7 @@ Plugin 'thejefe/vim-prreview'
 Plugin 'thejefe/github-issues.vim'
 Plugin 'bling/vim-airline'
 Plugin 'junegunn/vim-github-dashboard'
+Plugin 'nanotech/jellybeans.vim'
 " END Plugins ==================================
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -43,7 +44,7 @@ filetype plugin indent on    " required
 " Required for neovim
 let g:python_host_prog='/usr/local/bin/python'
 
-colorscheme anotherdark
+colorscheme jellybeans
 set wildmenu
 set guifont=Inconsolata\ For\ Powerline
 set foldmethod=syntax
