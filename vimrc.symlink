@@ -134,6 +134,9 @@ nnoremap <C-a> :set transparency-=1<CR>
 set tags=./tags,tags,coffee.tags
 map <Leader>c :!rm tags; ctags --extra=+f --exclude=coverage --exclude=.git --exclude=vendor --exclude=log --exclude=node_modules --exclude=public -R *;rm coffee.tags; coffeetags -R -f coffee.tags<CR><CR>
 
+" pretty print json
+map <leader>j <Esc>:%!json_xs -f json -t json-pretty<CR>
+
 " vim-airline always on
 set laststatus=2
 let g:airline_powerline_fonts = 1
