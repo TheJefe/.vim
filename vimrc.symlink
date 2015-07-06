@@ -161,6 +161,12 @@ filetype on
 filetype plugin on
 au BufNewFile,BufRead *.note set filetype=note
 
+" Turn on spell check for certain file types
+set complete+=kspell
+autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_us
+autocmd BufRead,BufNewFile *.txt setlocal spell spelllang=en_us
+autocmd FileType gitcommit setlocal spell spelllang=en_us
+
 " Custom nerd commenter mapping
 let g:NERDCustomDelimiters = { 'note': { 'left': '~~'} }
 
