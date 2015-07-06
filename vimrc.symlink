@@ -183,7 +183,7 @@ let g:gist_show_privates = 1
 :ca gp !git pull
 
 " Open markdown files with Chrome.
-nnoremap <F5> :silent !open -a "Google Chrome.app" "%:p"<CR> :redraw!<CR>
+nnoremap <F5> :silent !open -a "/Applications/Google Chrome.app" "%:p"<CR> :redraw!<CR>
 
 " Trying a better git grep
 command -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | cw | redraw!
