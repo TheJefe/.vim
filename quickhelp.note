@@ -95,3 +95,10 @@ C-W C-] - Open the definition in a horizontal split
 
 ** CtrlP
 Note: you can quickly purge the cache by pressing <F5> while inside CtrlP.
+
+
+** Tmux
+
+Hide then return a pane
+:break-pane -d
+:join-pane -s :2
