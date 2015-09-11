@@ -36,6 +36,7 @@ Plugin 'bling/vim-airline'
 Plugin 'junegunn/vim-github-dashboard'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'hdima/python-syntax'
+Plugin 'tpope/vim-rvm'
 " END Plugins ==================================
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -320,3 +321,6 @@ function NoteBlock()
   put b
   .-1 put a
 :endfunction
+
+autocmd VimEnter * Rvm use default
+
