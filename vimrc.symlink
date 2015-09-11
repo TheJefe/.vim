@@ -324,3 +324,9 @@ function NoteBlock()
 
 autocmd VimEnter * Rvm use default
 
+function Status()
+  setlocal splitright
+  GHA thejefe
+  vsplit ~/notes/status.note
+:endfunction
+command! Status call Status()
