@@ -118,14 +118,11 @@ nnoremap gT :tabe<CR>
 " source current file
 map <leader>s :so %<CR>
 
-" alt-] open in tag in vertical split
-map <leader>g :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
-
 " clear the last highlighted search
 nnoremap <leader>h :noh<return><esc>
 
 " find current word in quickfix
-nnoremap <leader>fw :execute "vimgrep ".expand("<cword>")." %"<cr>:copen<cr>
+nnoremap K :Ggrep "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 " Increase or Decrease the current transparency value
 nnoremap <C-q> :set transparency+=1<CR>
@@ -201,6 +198,9 @@ let g:pr_review_merge_command = 'git stash; git checkout rc; git reset --hard or
 let g:github_access_token = '~/.github-issues.vim'
 
 let g:github_dashboard = { 'username': 'you', 'password': $GITHUB_TOKEN }
+
+" alt-] open in tag in vertical split
+:map <leader>g :belowright vsplit <CR>:exec("tag ".expand("<cword>"))<CR>
 
 " enable the numpad
 if &term=="xterm" || &term=="xterm-color" || &term=="xterm-256color"
