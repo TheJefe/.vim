@@ -189,10 +189,12 @@ command -nargs=+ Ggr execute 'silent Ggrep!' <q-args> | cw | redraw!
 " used for pr-review plugin
 "let g:pr_review_github_repos = ['thinkthroughmath/mathjs-rest','neovim/neovim','jnicklas/capybara']
 "let g:pr_review_query = 'state:open type:pr'
-let g:pr_review_github_repos = ['thinkthroughmath/apangea','thinkthroughmath/reporting','thinkthroughmath/lesson-player','thinkthroughmath/live_teaching','thinkthroughmath/avatar-builder','thinkthroughmath/scalr']
+let g:pr_review_github_repos = ['thinkthroughmath/apangea','thinkthroughmath/reporting','thinkthroughmath/lesson-player','thinkthroughmath/live_teaching','thinkthroughmath/avatar-builder','thinkthroughmath/storyboard','thinkthroughmath/scalr']
 let g:pr_review_query = "state:open type:pr label:\"Needs QA\""
 let g:pr_review_options = {'sort': 'updated', 'order': 'asc'}
 let g:pr_review_merge_command = 'git stash; git checkout rc; git reset --hard origin/rc; git pull; git pull --no-ff --no-edit origin'
+
+let g:gh_issues_query = "state:open user:thinkthroughmath type:pr label:\"Needs QA\" sort:created-asc"
 
 " Used for github-issues
 let g:github_access_token = '~/.github-issues.vim'
@@ -323,6 +325,18 @@ function NoteBlock()
 :endfunction
 
 autocmd VimEnter * Rvm use default
+
+" lists issues created by Me
+function MyIssues()
+  let temp_query = g:pr_review_query
+  let temp_options = g:pr_review_options
+  let g:pr_review_query = "state:open author:TheJefe"
+  let g:pr_review_options = {'sort': 'created', 'order': 'desc'}
+  PR
+  let g:pr_review_query = temp_query
+  let g:pr_review_options = temp_options
+:endfunction
+command! MyIssues call MyIssues()
 
 function Status()
   setlocal splitright
